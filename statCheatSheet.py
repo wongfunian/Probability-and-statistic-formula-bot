@@ -112,7 +112,7 @@ formulaList = {
         },
         {
             "imagePath": "",
-            "description": "**Mutually Exclusive (互相排斥)**\n- Event that cannot occur together\n- P(A ∩ B) = 0, it will not have same element in event A and event B\n- P(A ∪ B) = P(A) + P(B)"
+            "description": "**Mutually Exclusive (互不干涉)**\n- Event that cannot occur together\n- P(A ∩ B) = 0, it will not have same element in event A and event B\n- P(A ∪ B) = P(A) + P(B)"
         },
         {
             "imagePath": "chapter 3 Probability/independentEvent.png",
