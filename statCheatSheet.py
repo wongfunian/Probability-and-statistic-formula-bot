@@ -7,8 +7,6 @@ from dotenv import load_dotenv, find_dotenv
 #
 load_dotenv(find_dotenv())
 
-bot = commands.Bot(command_prefix='!')
-
 
 chapterList = '''
 1. Chapter 2 Descriptive Statistics
@@ -106,7 +104,7 @@ formulaList = {
         },
         {
             "imagePath": "chapter 3 Probability/complementEvent.png",
-            "description": "**Complement of an Event**\n- The result denotes the probability of A does not occur"
+            "description": "**Complement of an Event**\n- P(Ā) denotes the probability of A does not occur"
         },
         {
             "imagePath": "chapter 3 Probability/additionRule.png",
