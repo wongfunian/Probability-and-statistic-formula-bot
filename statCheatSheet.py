@@ -35,7 +35,7 @@ chapterThreeFormulaList = '''
 1. Probability of an Event
 2. Complement of an Event
 3. Addition Rule
-4. Mutually Exclusive (相互排斥)
+4. Mutually Exclusive (互不干涉)
 5. Independent Event
 6. Dependent Event
 7. Conditional Probability
