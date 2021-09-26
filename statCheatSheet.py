@@ -45,6 +45,14 @@ chapterThreeFormulaList = '''
 11. Combination
 '''
 
+chapterFourFormulaList = '''
+1. Normal Distribution
+2. Binomial Distribution
+3. Normal Approximation to the Binomial Distribution
+4. Poisson Distribution
+5. Poisson Approximation to the Binomial Distribution
+'''
+
 
 triggerKeyword = ["stat", "stats", "formula",
                   "cheatsheet", "statisticformula"]
@@ -143,7 +151,28 @@ formulaList = {
             "description": "**Combination**\n- no attention given to order of arrangement\n- sequence is not important"
         }
     ],
-    "chapter 4": [],
+    "chapter 4": [
+        {
+            "imagePath": "chapter 4 Probability Distribution/standardNormalDistribution.png",
+            "description": "**Standard Normal Distribution**\n- μ = mean\n- σ = standard deviation"
+        },
+        {
+            "imagePath": "chapter 4 Probability Distribution/binomialDistribution.png",
+            "description": "**Binomial Distribution**\n- n = number of trials\n- x = number success of trial\n- p = probability of success\n- q = probability of failure\n- mean = np\n- variance = np(1-q)"
+        },
+        {
+            "imagePath": "chapter 4 Probability Distribution/normalApproximationToBinomialDistribution.png",
+            "description": "**Normal Approximation to the Binomial Distribution**\nPs: remember to do Continuity Correction"
+        },
+        {
+            "imagePath": "chapter 4 Probability Distribution/poissonDistribution.png",
+            "description": "**Poisson Distribution**\n- λ = np\n- For a Poisson distribution with parameter λ, mean = λ, and variance = λ"
+        },
+        {
+            "imagePath": "chapter 4 Probability Distribution/poissonApproximationToBinomialDistribution.png",
+            "description": "**Poisson Approximation to the Binomial Distribution**"
+        }
+    ],
     "chapter 5": [],
     "chapter 6": [],
     "chapter 7": []
@@ -182,6 +211,7 @@ class MyClient(discord.Client):
 
                 elif int(msg.content) == 3:
                     formulaSelected = formulaList["chapter 4"]
+                    await message.channel.send(chapterFourFormulaList)
 
                 elif int(msg.content) == 4:
                     formulaSelected = formulaList["chapter 5"]
