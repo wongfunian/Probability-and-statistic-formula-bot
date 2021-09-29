@@ -53,6 +53,26 @@ chapterFourFormulaList = '''
 5. Poisson Approximation to the Binomial Distribution
 '''
 
+chapterFiveFormulaList = '''
+1. Sampling Distribution of Sample Proportion
+2. True Population Proportion (sample proportion)
+3. Proper Sample Size (standard deviation)
+4. Proper Sample Size (sample proportion)
+5. Proper Sample Size (no standard deviation or sample proportion is provided)
+6. Finite Population Adjustments (standard deviation)
+7. Finite Population Adjustments (sample proportion)
+'''
+
+chapterSixFormulaList = '''
+1. Test Statistic
+'''
+
+chapterSevenFormulaList = '''
+1. Least Sqaure Method (find a & b)
+2. Product Moment Correlation Coefficient
+3. Spearman's Rank Correlation Coefficient
+'''
+
 
 triggerKeyword = ["stat", "stats", "formula",
                   "cheatsheet", "statisticformula"]
@@ -173,9 +193,56 @@ formulaList = {
             "description": "**Poisson Approximation to the Binomial Distribution**"
         }
     ],
-    "chapter 5": [],
-    "chapter 6": [],
-    "chapter 7": []
+    "chapter 5": [
+        {
+            "imagePath": "chapter 5 Estimation and Confidence Interval/samplingDistributionOfSampleProportion.png",
+            "description": "**Sampling Distribution of Sample Proportion**\n- x̄ = mean\n- n = number\n- σ = population standard deviation\n- s = sample standard deviation"
+        },
+        {
+            "imagePath": "chapter 5 Estimation and Confidence Interval/truePopulationProportion.png",
+            "description": "**True Population Proportion**\n- Ps = Sample Proportion (x/n)\n- n = number"
+        },
+        {
+            "imagePath": "chapter 5 Estimation and Confidence Interval/properSampleSize(mean).png",
+            "description": "**Proper Sample Size (standard deviation)**\n- s = sample standard deviation\n- r = degree of accuracy"
+        },
+        {
+            "imagePath": "chapter 5 Estimation and Confidence Interval/properSampleSize(populationProportion).png",
+            "description": "**Proper Sample Size (sample proportion)**\n- Ps = Sample Proportion (x/n)\n- r = degree of accuracy"
+        },
+        {
+            "imagePath": "chapter 5 Estimation and Confidence Interval/properSampleSize(nothing).png",
+            "description": "**Proper Sample Size (no standard deviation or sample proportion is provided)**\n- r = degree of accuracy"
+        },
+        {
+            "imagePath": "chapter 5 Estimation and Confidence Interval/finitePopulationAdjustments(standardDeviation).png",
+            "description": "**Finite Population Adjustments (standard deviation)**\n- σ = population standard deviation\n- N = population number\n- n = sample number"
+        },
+        {
+            "imagePath": "chapter 5 Estimation and Confidence Interval/finitePopulationAdjustments(sampleProportion).png",
+            "description": "**Finite Population Adjustments (sample proportion)**\n- Ps = Sample Proportion (x/n)\n- σ = population standard deviation\n- N = population number\n- n = sample number"
+        }
+    ],
+    "chapter 6": [
+        {
+            "imagePath": "chapter 6 Hypothesis Testing/testStatistic.png",
+            "description": "**Test Statistic**"
+        },
+    ],
+    "chapter 7": [
+        {
+            "imagePath": "chapter 7 Regression and Correlation/leastSquare.png",
+            "description": "**Least Square Method**\n x̄ = mean\n n = number of set of data"
+        },
+        {
+            "imagePath": "chapter 7 Regression and Correlation/productMomentCorrelationCoefficient.png",
+            "description": "**Product Moment Correlation Coefficient**"
+        },
+        {
+            "imagePath": "chapter 7 Regression and Correlation/spearmanRankCorrelationCoefficient.png",
+            "description": "**Spearman's Rank Correlation Coefficient**"
+        },
+    ]
 }
 
 
@@ -215,12 +282,15 @@ class MyClient(discord.Client):
 
                 elif int(msg.content) == 4:
                     formulaSelected = formulaList["chapter 5"]
+                    await message.channel.send(chapterFiveFormulaList)
 
                 elif int(msg.content) == 5:
                     formulaSelected = formulaList["chapter 6"]
+                    await message.channel.send(chapterSixFormulaList)
 
                 elif int(msg.content) == 6:
                     formulaSelected = formulaList["chapter 7"]
+                    await message.channel.send(chapterSevenFormulaList)
 
                 try:
 
