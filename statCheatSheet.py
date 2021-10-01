@@ -299,6 +299,8 @@ class MyClient(discord.Client):
                     msg = await client.wait_for("message", timeout=20.0, check=check)
                     if msg.content in triggerKeyword:
                         return
+
+                    print(msg.author)
                     if formulaSelected[int(msg.content) - 1]["imagePath"] != "":
                         await message.channel.send(file=discord.File(formulaSelected[int(msg.content) - 1]["imagePath"]))
                     if formulaSelected[int(msg.content) - 1]["description"] != "":
