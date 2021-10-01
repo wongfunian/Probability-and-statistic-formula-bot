@@ -82,7 +82,7 @@ formulaList = {
         {
             "imagePath": "chapter 2 Descriptive Statistics/mode.png",
             "description":
-            "**Mode**\n- Lm = Lower class limit\n- fm = frequency\n- fa = next class frequency\n- fb = previous class frequency\n- C = class size\n\nps: If class size is not equal, frequency must be replaced by standard frequency"
+            "**Mode**\n- Lm = Lower Class Boundary\n- fm = frequency\n- fa = next class frequency\n- fb = previous class frequency\n- C = class size\n\nps: If class size is not equal, frequency must be replaced by standard frequency"
         },
         {
             "imagePath": "chapter 2 Descriptive Statistics/mean.png",
@@ -90,7 +90,7 @@ formulaList = {
         },
         {
             "imagePath": "chapter 2 Descriptive Statistics/median.png",
-            "description": "**Median**\n- Lm = Lower class limit\n- Cm = class Size\n- fm = frequency\n- N = total frequency\n- ∑fm-1 = cumulative frequency for median's preceding/previous class"
+            "description": "**Median**\n- Lm = Lower Class Boundary\n- Cm = class Size\n- fm = frequency\n- N = total frequency\n- ∑fm-1 = cumulative frequency for median's preceding/previous class"
         },
         {
             "imagePath": "chapter 2 Descriptive Statistics/sampleRaw-SD.png",
@@ -110,11 +110,11 @@ formulaList = {
         },
         {
             "imagePath": "chapter 2 Descriptive Statistics/lowerQuartile.png",
-            "description": "**Lower Quartile (Q1)**\n- Lq = Lower class limit\n- Cq = class Size\n- fq = frequency\n- N = total frequency\n- ∑fm-1 = cumulative frequency for Lower Quartile's preceding/previous class"
+            "description": "**Lower Quartile (Q1)**\n- Lq = Lower Class Boundary\n- Cq = class Size\n- fq = frequency\n- N = total frequency\n- ∑fm-1 = cumulative frequency for Lower Quartile's preceding/previous class"
         },
         {
             "imagePath": "chapter 2 Descriptive Statistics/upperQuartile.png",
-            "description": "**Upper Quartile (Q3)**\n- Lq = Lower class limit\n- Cq = class Size\n- fq = frequency\n- N = total frequency\n- ∑fm-1 = cumulative frequency for Upper Quartile's preceding/previous class"
+            "description": "**Upper Quartile (Q3)**\n- Lq = Lower Class Boundary\n- Cq = class Size\n- fq = frequency\n- N = total frequency\n- ∑fm-1 = cumulative frequency for Upper Quartile's preceding/previous class"
         },
         {
             "imagePath": "",
