@@ -15,4 +15,4 @@ Formula chapter that included in this bot \
 
 
 \
-Check out this link to add your own python bot [click me](https://realpython.com/how-to-make-a-discord-bot-python/)
+Check out this link to add the python bot into your own server [click me](https://realpython.com/how-to-make-a-discord-bot-python/)
