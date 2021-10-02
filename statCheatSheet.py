@@ -300,7 +300,6 @@ class MyClient(discord.Client):
                     if msg.content in triggerKeyword:
                         return
 
-                    print(msg.author)
                     if formulaSelected[int(msg.content) - 1]["imagePath"] != "":
                         await message.channel.send(file=discord.File(formulaSelected[int(msg.content) - 1]["imagePath"]))
                     if formulaSelected[int(msg.content) - 1]["description"] != "":
